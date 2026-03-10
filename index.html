@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="오늘 뭐먹지? 오메추가 메뉴를 추천해드립니다!" />
+  <meta property="og:title" content="오메추 - 오늘의 메뉴 추천" />
+  <meta property="og:description" content="버튼 하나로 오늘 메뉴 고민 끝!" />
+  <title>오메추 - 오늘의 메뉴 추천</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 상단 광고 영역 (AdSense 승인 후 활성화) -->
+  <!-- <div class="ad-top"><ins class="adsbygoogle" ...></ins></div> -->
+
+  <main>
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+      <div class="hero-inner">
+
+        <!-- 캐릭터 이미지 영역 (사진 준비되면 img 태그로 교체) -->
+        <div class="character-area">
+          <div class="character-placeholder">🍽️</div>
+        </div>
+
+        <h1 class="title">오메추</h1>
+        <p class="subtitle">오늘의 메뉴, 제가 골라드릴게요 😎</p>
+
+        <!-- 카테고리 필터 -->
+        <div class="filter-wrap">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-tag="전체">전체</button>
+            <button class="filter-btn" data-tag="한식">🇰🇷 한식</button>
+            <button class="filter-btn" data-tag="중식">🇨🇳 중식</button>
+            <button class="filter-btn" data-tag="일식">🇯🇵 일식</button>
+            <button class="filter-btn" data-tag="양식">🍴 양식</button>
+          </div>
+        </div>
+
+        <button class="recommend-btn" id="recommendBtn">
+          🎲 메뉴 추천받기
+        </button>
+
+      </div>
+    </section>
+
+    <!-- 결과 섹션 -->
+    <section class="results" id="results">
+      <h2 class="results-title">오늘의 추천 메뉴 🍴</h2>
+      <div class="menu-cards" id="menuCards"></div>
+      <button class="again-btn" id="againBtn">🔄 다시 추천받기</button>
+    </section>
+  </main>
+
+  <!-- 하단 광고 영역 (AdSense 승인 후 활성화) -->
+  <!-- <div class="ad-bottom"><ins class="adsbygoogle" ...></ins></div> -->
+
+  <footer>
+    <p>© 2026 오메추 · 오늘도 맛있게 드세요 🍴</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
